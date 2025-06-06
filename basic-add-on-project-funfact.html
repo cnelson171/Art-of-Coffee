@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>fun facts </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Shadows+Into+Light+Two&display=swap"
+    rel="stylesheet">
+<style type="text/css">
+    * {
+        cursor: url(https://ani.cursors-4u.net/food/foo-7/foo654.cur), auto !important;
+    }
+</style><a href="https://www.cursors-4u.com/cursor/2013/04/16/starbucks-caramel-frappuccino.html" target="_blank"
+    title="Starbucks Caramel Frappuccino"><img src="https://cur.cursors-4u.net/cursor.png" border="0"
+        alt="Starbucks Caramel Frappuccino" style="position:absolute; top: 0px; right: 0px;" /></a>
+<style>
+    body {
+        background-color: #a68063;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-family: "Bodoni Moda SC", serif;
+        font-style: normal;
+
+
+    }
+
+    /* Start https://www.cursors-4u.com */
+    * {
+        cursor: url(https://ani.cursors-4u.net/food/foo-7/foo654.cur), auto !important;
+    }
+
+    /* End https://www.cursors-4u.com */
+
+
+    button {
+        display: block, none;
+        margin: 0 auto;
+        border: 1px solid #cfab71;
+        background: #fff7e8;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+    }
+
+    button:hover {
+        background: #cfab71;
+
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #cdb8a3;
+        color: #0f0700;
+        padding: 20px;
+        border-radius: 20px;
+        justify-items: center;
+
+    }
+
+
+
+      
+
+    .theme-change {
+        font-size: 15px;
+        background: #522d25;
+        color: #e6d6cc;
+    }
+
+    .fun-facts {
+        font-size: 15px;
+        background: #522d25;
+        color: #e6d6cc;
+    }
+
+   }
+   .dark {
+    background:#442c25;
+    color:#f4e7df;
+
+   }
+   .dark .container{
+    background: #795139;
+   color:#f4e7df;
+   }
+</style>
+
+<body>
+    <button class="theme-change">Dark Roast</button>
+   
+<div class="container">
+ <h2>🎨 The Art of Coffee</h2>
+  <p>Every swirl in a latte, every balanced espresso shot, and every hand-poured brew reflects an artist's touch. Baristas
+trained for years to master latte art, learning to paint hearts, tulips, and rosettas with steamed milk. Behind every
+cup is a dance of timing, technique, and taste.</p>
+<p>Coffee is also curated like fine wine. The beans—whether from the hills of Ethiopia or the volcanic soils of
+Guatemala carries flavor notes as complex as any vintage. Each roast and brew becomes a form of creative expression.</p>
+
+<h2>🌍 A Global Culture in a Cup</h2>
+<p>Coffee houses have long been the backdrop of revolutions, poetry, and connection. In 17th-century Europe, they were
+dubbed "penny universities" where ideas flowed as freely as coffee. In Italy, espresso is a daily ritual, sipped
+standing at the bar. In Japan, the pour-over is treated with ceremonial care—slow, intentional, almost meditative.</p>
+<p>Across continents, coffee shapes culture, routine, and community.</p>
+
+<h2>🔬 A Delicious Science</h2>
+<p>Perfect coffee is a science of precision. The right water temperature, grind size, brew time, and pressure all play a
+crucial role.
+An espresso shot, for instance, requires exactly 9 bars of pressure and just the right extraction window to avoid sour
+or bitter notes.
+</p>
+<P>Roasting, too, is a demonstration of chemistry in action. Beans are transformed through heat and time into aromatic
+masterpieces containing
+over 800 flavor compounds—even more than wine!</P>
+    </div>
+    <a href="basic-add-on-project.html">
+
+    <button class="theme-change">Back</button>
+</a>
+
+<footer> coded by Chase Haddad</footer>
+
+<script> function themeChange() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+            switchTheme("light");
+        } else {
+            switchTheme("dark");
+        }
+    }
+
+    let themeChangeButton = document.querySelector(".theme-change");
+    themeChangeButton.addEventListener("click", themeChange);
+
+    function switchTheme(theme) {
+        document.body.className = theme;
+        localStorage.setItem('theme-change', theme);
+    }
+
+    function loadTheme() {
+        const savedTheme = localStorage.getItem('theme-change');
+        if (savedTheme) {
+            document.body.className = savedTheme;
+        }
+    }
+
+    window.onload = loadTheme;
+    </script>
+
+</body>
+</html>
